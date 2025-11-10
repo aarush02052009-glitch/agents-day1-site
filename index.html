@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 1 – Build Your First Agent using Gemini + ADK</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 30px;
+    }
+    h1, h2 {
+      color: #00ffcc;
+    }
+    a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    pre {
+      background: #1a1a1a;
+      color: #00ffcc;
+      padding: 15px;
+      border-radius: 10px;
+      overflow-x: auto;
+    }
+    .btn {
+      background: #00ffcc;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 8px;
+    }
+    .btn:hover {
+      background: #00e6b8;
+    }
+    section {
+      margin-bottom: 50px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎓 Day 1 – Build Your First Agent using Gemini + ADK</h1>
+  <p>Welcome to Unit 1 of the <strong>AI Agents Intensive Course</strong>! Today, you'll explore how to build your first
+  intelligent agent using Google’s Agent Development Kit (ADK) and Gemini. This page summarizes everything you need for Day 1.</p>
+
+  <section>
+    <h2>📄 Introduction to Agents – Whitepaper</h2>
+    <p>This whitepaper explains AI agents, their taxonomy, reliability, governance, and interoperability.</p>
+    <a href="https://www.kaggle.com/whitepaper-introduction-to-agents" target="_blank" class="btn">Read the Whitepaper</a>
+  </section>
+
+  <section>
+    <h2>🎧 Summary Podcast</h2>
+    <p>Listen to a short overview of today's topic.</p>
+    <audio controls>
+      <source src="assets/audio/podcast.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section>
+    <h2>💻 Codelabs</h2>
+    <ul>
+      <li><a href="https://www.kaggle.com/learn-guide/5-day-agents" target="_blank">Build your first agent using Gemini + ADK</a></li>
+      <li><a href="https://codelabs.developers.google.com/" target="_blank">Build your first multi-agent system (ADK)</a></li>
+    </ul>
+    <p><strong>Reminder:</strong> Verify your phone number on Kaggle before starting.</p>
+  </section>
+
+  <section>
+    <h2>🧩 Code Example</h2>
+    <pre><code>!pip install google-generativeai-agent
+
+from google.generativeai import adk
+
+agent = adk.Agent(
+    name="InfoAssistant",
+    purpose="Answer questions using Google Search and summarize the results."
+)
+
+agent.add_tool("google_search")
+
+response = agent.run("What is the capital of France and one fun fact about it?")
+print("Agent’s Answer:", response)</code></pre>
+    <p><strong>Output:</strong> The capital of France is Paris. Fun fact: The Eiffel Tower grows 6 inches taller in summer!</p>
+  </section>
+
+  <section>
+    <h2>🧰 Troubleshooting Guide</h2>
+    <a href="https://www.kaggle.com/code/markishere/day-0-troubleshooting-and-faqs" target="_blank" class="btn">View Guide</a>
+  </section>
+
+  <section>
+    <h2>🧠 NotebookLM</h2>
+    <a href="https://notebooklm.google/" target="_blank" class="btn">Open NotebookLM</a>
+  </section>
+
+  <section>
+    <h2>💬 Kaggle Discord</h2>
+    <a href="https://discord.com/invite/kaggle" target="_blank" class="btn">Join Discord</a>
+    <p>Link your account: <a href="https://kaggle.com/discord/confirmation" target="_blank">kaggle.com/discord/confirmation</a></p>
+  </section>
+
+  <section>
+    <h2>📺 Livestream Replay</h2>
+    <a href="https://www.youtube.com/@kaggle" target="_blank" class="btn">Watch Recording</a>
+    <p>Missed the live session? Watch anytime after school.</p>
+  </section>
+
+  <section>
+    <h2>🌐 Community Guidelines</h2>
+    <a href="https://www.kaggle.com/community-guidelines" target="_blank" class="btn">Read Guidelines</a>
+  </section>
+
+  <p style="text-align:center;color:#888;">© 2025 Thomas Shelby (Aarush Thakur) · AI Agents Intensive · Day 1</p>
+</body>
+</html>
